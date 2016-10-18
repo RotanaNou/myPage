@@ -1,0 +1,2 @@
+# myPage
+Example page
