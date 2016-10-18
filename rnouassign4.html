@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--Name:Rotana Nou-->
+<!--Assignment4: using css to style first assignment-->
+<!--Date: 10/04/2016-->
+<!--Reference: previous assignments, class work and w3schools.com-->
+<html lang ="en">
+<!--this is the head of the html file. its basically give the tile name of the page-->
+<!--charset is use to specify the character encoding for html-->
+<!--viewpoint is used for fitting depends on the screen display divece for the page-->
+<head>
+  <title>Mypersonal website</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="rnouassign4.css">
+  <meta name="viewpoint" content="width=device-width, initial-scal=1.0">
+</head>
+<body>
+  <header> <!--this part is creating the header of the page-->
+    <h1>Rotana Nou</h1>
+    <p>GUI Programming and Web Development</p>
+  </header>
+  <div class="wholepage"> <!--creating a section of the page that will contains all the elements inside this section-->
+    <ul> <!--creating an unordered list that provdies the navigation links-->
+      <li><a href="personal.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="Social.html">Social Media</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+    <div class="information"> <!--creating a nested div. This div is creating for providing the personal information-->
+      <img src="mypic.jpg" alt="angkor wat"> <!--uploading the image-->
+      <h2>My information</h2> <!--This is the header of a nested div-->
+      <dl> <!--this is the description list to describe about my education, current activity,interested and favorites movies and give those each term of each one of the description.-->
+        <dt class="education">Education</dt>
+        <dd>University of Massachusetts Lowell</dd>
+        <dd>Lowell High School (class of 2013)</dd>
+      </dl>
+      <dl>
+        <dt class="current">Current</dt>
+        <dd>Lead instructor at Engineering for kids</dd>
+        <dd>Lowell Dynamics FC (soccer player)</dd>
+      </dl>
+      <dl>
+        <dt class="interested">Interested</dt>
+        <dd>GUI Programming and Networking.</dd>
+        <dd>Sports including soccer and basketball.</dd>
+      </dl>
+      <dl>
+        <dt class="favorite">Favorite movies</dt>
+        <dd>Fast and Furious.</dd>
+        <dd>Ninja Turtle.</dd>
+      </dl>
+    </div>
+    <footer> <!-- a footer that will provide the name email and publised date.-->
+      <h3>Contact</h3>
+      <p>Author: Rotana Nou</p>
+      <p>Email: Rotana_Nou@student.uml.edu</p>
+      <p>Puslished Date: 10/04/2016</p>
+    </footer>
+  </div>
+</body>

@@ -1,0 +1,127 @@
+/*This is the styling of the header.*/
+/*basically it sets the text to center, set font style and so on for the header*/
+header{
+  text-align: left;
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  margin: 100px;
+}
+/*This is the body of the page*/
+/*where we can set the background image of the page, set the background size, color and other properties to this body*/
+body{
+  background-image: url("Angkorwat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: normal;
+  color: white;
+}
+/*This is the a section of the page inside the body of the page.*/
+/*we can style this section. for example can set the border properties, margin, set postion and so on*/
+.wholepage {
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  border-width: 1px;
+  margin:100px;
+  padding: 50px;
+  background-color: #454545;
+  min-width: 800px;
+  max-width: 960px;
+  position: relative;
+  box-shadow: 7px 7px 7px #c0c0c0;
+}
+/*This the an unorderd list of the nagivation links*/
+/*I set the text to the center, set margin properties, set the top and bottom border, and positoin is relative when window resized*/
+ul {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
+  position: relative;
+}
+/*This is the list*/
+/*I want list to display as inline and set the padding propeties*/
+li {
+  display: inline;
+  padding: 40px;
+}
+/*set the link text to none, make it all uppercase and color red*/
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+}
+/*when I put the mouse on that link will display white color*/
+a:hover {
+  color: white;
+}
+/*after links are visted it becomes red*/
+a:visited {
+  color: blue;
+}
+/*For the image, I want it to have a border radius to look rounded edges, set shadows and set to the right*/
+img{
+  border-radius: 30px;
+  float: right;
+  padding-top: 10px;
+  box-shadow: 3px 3px 3px #c0c0c0;
+}
+/*this is the information class*/
+/*I set different properties for this class to have top and bottom border and padding*/
+.information{
+  border-top: 2px solid;
+  padding: 8px;
+  border-color: #3498DB;
+  border-bottom: 5px solid grey;
+}
+/*header of my information*/
+/*I want to create a box around it and float to the left with other properties like colors and listed below*/
+h2{
+  float: left;
+  background-color: #3498DB;
+  font-weight: bold;
+  border: 2px solid black;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  border-radius: 15px;
+  height: 240px;
+  box-shadow: 2px 2px 2px white;
+}
+/*Set the description list to the center and width.*/
+.information dl {
+  text-align: center;
+  width: 690px;
+  margin: auto;
+}
+/*set education class of descrioptoin term font weight, and so on. I set the same properties for other classes as well.*/
+.education{
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  font-size: 17px;
+}
+.current{
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 5px;
+  font-size: 17px;
+}
+.interested{
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 5px;
+  font-size: 17px;
+}
+.favorite{
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 5px;
+  font-size: 17px;
+}
+/*set the footer font style to italic*/
+footer{
+  font-style: italic;
+}
