@@ -96,6 +96,12 @@ tbody > tr:first-child > td {
     color: white;
     background-color: black;
 }
+/*customize top left conor box*/
+tbody > tr:first-child > td:first-child {
+  background-color: white;
+  color: black;
+  opacity: 0;
+}
 /*customize left colums*/
 tbody > tr > td:first-child {
     color: white;
