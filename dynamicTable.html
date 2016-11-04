@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Name: Rotana Nou -->
+<!-- Assignemnt6 -->
+<!-- Date: 11/03/16 -->
+<!-- Description: This is the html file of assignment 6. For this file it is basically -->
+<!-- construct the sturture of Interactive Dynamic table. It contains the form to promt-->
+<!-- the user for input to do the multiplication across the row and colums that implemented -->
+<!-- with javaScript -->
+<!-- Reference: w3school.com and bootstrap.com -->
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- set title of the page -->
+        <title>Rotana's Dynamic table</title>
+        <!-- control layout points of view for all devices browsers -->
+        <link rel="stylesheet" type="text/css" href="css06/dynamicTable.css">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- link to css file -->
+
+    </head>
+    <body>
+        <!-- everything goes in here -->
+        <div class="wrapper">
+            <!-- row of the div -->
+            <div class="divRow">
+                <div class="col-sm-8">
+                    <!-- page header -->
+                    <h1 class="header"> Interactive Dynamics Table </h1>
+                </div>
+            </div>
+            <div class="divRow">
+                <div class="col-sm-8">
+                    <!-- set the instruction paragraph-->
+                    <div class="paragraph">
+                        <p>Welcome to Interactive Dynamics Table. Dynamics table allows you to do the multiplication.<br/>
+                            Inorder to do the multiplication. You must enter the appropriate number(s) for starting<br/>
+                            vertical, ending vertical, starting horizontal and ending horizontal.<br/>
+                            Please fill the following to perform the multiplication.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- div row for creating the form for user input-->
+            <!--reference: http://www.w3schools.com/TAGs/tag_label.asp -->
+            <div class="divRow">
+                <div class="col-sm-8">
+                    <div class="form">
+                        <form onsubmit="return false"> <!--WATCH THIS -->
+                            <!-- horizontal starting field -->
+                            <label>Horizontal Start:</label>
+                            <input type="number" name="start horizontal" id="start_hor" value"1"><br>
+                            <!-- horizontal ending field -->
+                            <label>Horizontal End:</label>
+                            <input type="number" name="end horizontal" id="end_hor" value"1"><br>
+                            <!-- vertical starting field -->
+                            <label>Vertical Start:</label>
+                            <input type="number" name="start vertical" id="start_ver" value"1"><br>
+                            <!-- vertical ending field -->
+                            <label>Vertical End:</label>
+                            <input type="number" name="end vertical" id="end_ver" value"1"><br>
+                            <!-- proceding button -->
+                            <input type="submit" value="Process" onclick="myCal()"><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- In this div is for the display table -->
+            <div id="mul_table"></div><br>
+        </div>
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- latest modified for css -->
+        <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- link connected to javaScript file -->
+        <script type='text/javascript' src="js06/dynamicTable.js"></script>
+
+    </body>
+</html>
