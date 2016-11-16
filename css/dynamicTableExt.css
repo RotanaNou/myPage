@@ -130,7 +130,7 @@ input.error{
     font-size: 12pt;
     font-family: "Times New Roman", Georgia, Serif;
     background-color: #FFBABA;
-    background-image: url('../images/error.png');
+    background-image: url('../image/error.png');
     background-repeat: no-repeat;
     background-position: 2px 14px;
     padding: 16px 0 0 22px;
