@@ -116,13 +116,6 @@ tbody > tr > td:first-child {
     background-color: grey;
 }
 /*reference: http://www.jankoatwarpspeed.com/css-message-boxes-for-different-message-types/*/
-/*customize for error message*/
-#error_message {
-    color: #9F6000;
-    font-family: "Times New Roman", Georgia, Serif;
-    font-size: 12pt;
-    font-style: normal;
-}
 /*cutomize for inpout field error*/
 input.error{
     color: black;
