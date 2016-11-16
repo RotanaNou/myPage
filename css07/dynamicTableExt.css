@@ -1,1 +1,137 @@
-
+/*  Name: Rotana Nou
+    Course: GUI Programming I
+    Assignment: Interactive Dynamic Table extension
+    Date: 11/15/16
+    email: Rotana_Nou@student.uml.edu
+    Description: This is the css file. so its basically set all the properties for the html
+    file and the table as follow. also this is the extension of previous assignment
+    so just added more customization of input error, messages error.
+    Reference: w3school.com, http://www.w3schools.com/css/css_form.asp, http://www.w3schools.com/css/css_image_transparency.asp
+    w3school.com was really helpful for this styling because it shows examples similarly we can use.*/
+/*  set the properties and style body*/
+body{
+    background-color: white;
+    background-size: cover;
+    font-family: normal;
+    background-repeat: no-repeat;
+    color:black;
+    background-color: #F5F5F5;
+}
+/*customize wrapper*/
+.wrapper{
+    border-style: ridge;
+    border-color: white;
+    margin: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+}
+/*customize class header*/
+.header{
+    text-align: center;
+    font-family: "Time New Roman", Times, serif;
+    font-style: oblique;
+}
+/*customize class paragraph*/
+.paragraph > p{
+    font-style: normal;
+    font-size: 13pt;
+    font-family:inherit;
+    padding-top: 2px;
+    text-align: center;
+}
+/*customize */
+.form {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #BDB4B4;
+    padding: 20px 30px 20px 30px;
+    width: 500px;
+    left: 80px;
+    margin: auto;
+}
+/* customize input.*/
+input[type=number], select {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*customize for sumit input*/
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*customize id=table_dir*/
+div#table_dir {
+    font-style: normal;
+    font-family: "Times New Roman", Georgia, Serif;
+    margin-left: 159px;
+}
+/* customize multable*/
+div#mul_table {
+    margin:auto;
+    width: 100%;
+}
+/*customize table*/
+table {
+    margin: auto;
+    width: 50%;
+}
+/*customize tbody*/
+tbody {
+    margin:auto;
+    width: 50%;
+}
+/*use parent selector to customize colum and row    */
+tbody > tr > td {
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #FFEFD5;
+}
+/*customize table data of first row */
+tbody > tr:first-child > td {
+    color: white;
+    background-color: black;
+}
+/*customize top left conor box*/
+tbody > tr:first-child > td:first-child {
+  background-color: white;
+  color: black;
+  opacity: 0;
+}
+/*customize left colums*/
+tbody > tr > td:first-child {
+    color: white;
+    background-color: grey;
+}
+/*reference: http://www.jankoatwarpspeed.com/css-message-boxes-for-different-message-types/*/
+/*cutomize for inpout field error*/
+input.error{
+    color: black;
+    background-color: white;
+    background-image: none;
+    border-color: red;
+}
+/*error customization*/
+.error {
+    color: black;
+    text-align: left;
+    font-size: 12pt;
+    font-family: "Times New Roman", Georgia, Serif;
+    background-color: #FFBABA;
+    background-image: url('../images/error.png');
+    background-repeat: no-repeat;
+    background-position: 2px 14px;
+    padding: 16px 0 0 22px;
+}
