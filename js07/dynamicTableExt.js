@@ -20,7 +20,7 @@
 function checkValidation() {
     //select the form id and use validate function to create the rules form
     //http://www.javascript-coder.com/form-validation/jquery-form-validation-guide.phtml
-    $("#form_table").validate({
+    $("#form_table").validate( {
     //creating the rule form properties
     rules: {
         start_hor: {
