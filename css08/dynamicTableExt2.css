@@ -76,7 +76,7 @@ input[type=submit] {
 div#table_dir {
     font-style: normal;
     font-family: "Times New Roman", Georgia, Serif;
-    margin-left: 159px;
+    text-align: center;
 }
 /* customize multable*/
 div#mul_table {
