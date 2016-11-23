@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Name: Rotana Nou -->
+<!-- Assignemnt7 Interactive Dynamic Table extension -->
+<!-- Date: 11/22/16 -->
+<!-- email: Rotana_Nou@student.uml.edu -->
+<!-- Description: This is the html file of assignment 8.-->
+<!-- For this file it is basically -->
+<!-- construct the sturture of Interactive Dynamic table. It contains the form to promt-->
+<!-- the user for input to do the multiplication across the row and colums that implemented -->
+<!-- with javaScript, jqueryvalidation and JQuery UI-->
+<!-- the modification from assignment 7-->
+<!-- Reference: w3school.com and bootstrap.com jQuery UI theme -->
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- set title of the page -->
+        <title>Rotana's Dynamic table</title>
+        <!-- control layout points of view for all devices browsers -->
+        <link rel="stylesheet" type="text/css" href="css08/dynamicTableExt2.css">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- jQuery UI Theme -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+
+    </head>
+    <body>
+        <!-- everything goes in here -->
+        <div class="wrapper">
+            <!-- row of the div -->
+            <div class="divRow">
+                <div class="col-sm-8">
+                    <!-- page header -->
+                    <h1 class="header"> Interactive Dynamics Table </h1>
+                </div>
+            </div>
+            <div class="divRow">
+                <div class="col-sm-8">
+                    <!-- set the instruction paragraph-->
+                    <div class="paragraph">
+                        <p>Welcome to Interactive Dynamics Table. Dynamics table allows you to do the multiplication.<br/>
+                            Inorder to do the multiplication. You must enter the appropriate number(s) for starting<br/>
+                            vertical, ending vertical, starting horizontal and ending horizontal.<br/>
+                            Please fill the following to perform the multiplication from <em>-25 to 25.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- div row for creating the form for user input-->
+            <!--reference: http://www.w3schools.com/TAGs/tag_label.asp -->
+            <div class="divRow">
+                <div class="col-sm-8">
+                    <div class="form">
+                        <form id="form_table" name="form_table" method="get">
+                            <!-- horizontal starting field -->
+                            <div>
+                                <label>Horizontal Start:</label>
+                                <input type="number" name="start_hor" id="start_hor" value="0" required>
+                                <div id="sh_slider"></div>
+                            </div>
+                            <!-- horizontal ending field -->
+                            <div>
+                                <label>Horizontal End:</label>
+                                <input type="number" name="end_hor" id="end_hor" value="0" required>
+                                <div id="eh_slider"></div>
+                            </div>
+                            <!-- vertical starting field -->
+                            <div>
+                                <label>Vertical Start:</label>
+                                <input type="number" name="start_ver" id="start_ver" value="0" required>
+                                <div id="sv_slider"></div>
+                            </div>
+                            <!-- vertical ending field -->
+                            <div>
+                                <label>Vertical End:</label>
+                                <input type="number" name="end_ver" id="end_ver" value="0" required>
+                                <div id="ev_slider"></div>
+                            </div>
+                            <!-- proceding button -->
+                            <input type="submit" id="but_sub" class="submit_button" onClick="createTab();" value="Process">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Guid to see result of mul table. -->
+            <div id="table_dir">
+                <p>After entering all the fields above. See result below.</p>
+            </div><br>
+            <!-- In this div is for the display table -->
+            <div id="mul_table"></div><br><br>
+            <div id="tabWidget">
+                <ul>
+                </ul>
+            </div><br><br>
+        </div>
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- latest modified for css -->
+        <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- jQuery Validation -->
+        <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+        <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+        <!-- jQuer UI -->
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- link connected to javaScript file -->
+        <script type='text/javascript' src="js08/dynamicTableExt2.js"></script>
+        <!-- call checkValidation function when ready-->
+        <script>
+        $(document).ready(function(){
+            createSlider(); //load the slider function
+            checkValidation(); //load checkValidation function
+            submitAuto(); //load sumitAuto function
+        });
+        </script>
+    </body>
+</html>
