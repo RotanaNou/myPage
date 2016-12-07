@@ -1,0 +1,78 @@
+<!--Name: Rotana Nou
+    Contact: Rotana_Nou@student.uml.edu
+    Assignment 9: Creating a scrabble game.
+    Course: 91.461 GUI Programming I
+    Copyright@2016 by Rotana Nou
+    Description: Implement a bit of the game of scrabble using drag and drop.
+    To give additional knowledge with JQuery UI library.
+    File Name: scrabble.html
+    Date: 12/06/16
+    References: http://christianeverett.github.io/91.461/public_html/Scrabble.html by Christian Everett
+    http://weblab.cs.uml.edu/~rmeza/scrabble/ by Ramon Meza
+    https://jquery.com
+    https://w3schools.com
+    https://piazza.com/class/isglehm177n60h?cid=61 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--title of the page-->
+    <title>assignment9</title>
+    <meta charset="utf-8">
+    <!-- setting for view all the devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery UI Theme -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <!-- link to css file -->
+    <link rel="stylesheet" href="css09/scrabble.css">
+</head>
+<body>
+    <!-- This div create title of header of the page -->
+    <div id="headerTitle">A s s i g n m e n t # 9</div><br><br><br>
+    <!-- this div is responsible for showing the scrabble board -->
+    <div id="board">
+        <!-- uploading the game board wooden blocks images-->
+        <img alt="first block" id="0" class="board_blocks" src="images/blankimage.jpg">
+        <img alt="second block" id="1" class="board_blocks" src="images/blankimage.jpg">
+        <img alt="third block" id="2" class="board_blocks" src="images/doubleletterscore.jpg">
+        <img alt="forth block" id="3" class="board_blocks" src="images/blankimage.jpg">
+        <img alt="fifth block" id="4" class="board_blocks" src="images/blankimage.jpg">
+        <img alt="sixth block" id="5" class="board_blocks" src="images/doublewordscore.jpg">
+        <img alt="seventh block" id="6" class="board_blocks" src="images/blankimage.jpg">
+        <img alt="eighth block" id="7" class="board_blocks" src="images/blankimage.jpg">
+    </div><br><br><br>
+    <!-- This part is for rack to hold user tile -->
+    <div id="usrTile"></div><br><br><br>
+    <!-- This part is for total score -->
+    <div id="usrTotal">Total Score:</div><br>
+    <!-- This part is for the info output-->
+    <div class="display">Current Score:
+        <div id="currentPoint"></div><br>
+        <div id="chkDict">Check Word</div><br>
+        <!-- create button for tile refill -->
+        <button type="button" class="clickButton" onclick="randomTile()">Refill</button>
+        <!-- create button for new round button -->
+        <button type="button" class="clickButton" onclick="pageReload()">New Game</button>
+        <!-- create button for submit button -->
+        <button type="button" class="clickButton" onclick="reloadTiles()">Submit</button>
+    </div>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- latest modified for css -->
+    <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery Validation -->
+    <script type='text/javascript' src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script type='text/javascript' src="https://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+    <!-- jQuer UI -->
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- link connected to javaScript file -->
+    <script type='text/javascript' src="js09/scrabble.js"></script>
+    <script>
+    $(document).ready(function() {
+        randomTile(); //load randomTile function
+        allowDrop(); //load allowDrop function
+    });
+    </script>
+</body>
+</html>
