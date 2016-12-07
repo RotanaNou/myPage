@@ -1,1 +1,99 @@
-
+/*  Name: Rotana Nou
+    Contact: Rotana_Nou@student.uml.edu
+    Assignment 9: Creating a scrabble game.
+    Course: 91.461 GUI Programming I
+    Copyright@2016 by Rotana Nou
+    Description: Implement a bit of the game of scrabble using drag and drop.
+    To give additional knowledge with JQuery UI library.
+    File Name: scrabble.css
+    Date: 12/06/16
+    Reference: https://css-tricks.com/almanac/properties/a/animation/
+    https://robots.thoughtbot.com/css-animation-for-beginners
+    http://learn.shayhowe.com/advanced-html-css/transitions-animations/
+ */
+/* https://css-tricks.com/almanac/properties/a/animation/ */
+/*customize for body*/
+body {
+    animation: pulse 5s infinite;
+}
+@keyframes pulse {
+    0% {
+        background-color: #FFE4C4;
+    }
+    100% {
+        background-color: #FFDEAD;
+    }
+}
+/*customize rack userTile*/
+#usrTile{
+    width: 42%;
+    margin: auto;
+}
+/*customize board div*/
+#board{
+    text-align: center;
+}
+/*customize score div*/
+#usrTotal{
+    font-family: "Times New Roman", Times, serif;
+    font-size: normal;
+    font-size: 14px;
+    text-align: center;
+}
+/*customize the output info*/
+.display{
+    font-family: "Times New Roman", Times, serif;
+    font-size: normal;
+    font-size: 14px;
+    text-align: center;
+}
+/* https://robots.thoughtbot.com/css-animation-for-beginners */
+/*I got this from the above websit. Not belong to me*/
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*from keyfram above*/
+/*to do the heade title aniamtion*/
+#headerTitle{
+    display: block;
+    font-family: 'alegreya-sans.thin';
+    font-size: 500%;
+    text-align: center;
+    color: black;
+    width: auto;
+    height: auto;
+    float: inherit;
+    animation-duration: 3s;
+    animation-name: bounceIn;
+}
+/* http://learn.shayhowe.com/advanced-html-css/transitions-animations/ */
+/*I got from website above. This code is not belong to me*/
+/*customize buttons*/
+.clickButton {
+    border: 0;
+    background: #0087cc;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 30px;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+}
+/*make the button active*/
+.clickButton:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+}
