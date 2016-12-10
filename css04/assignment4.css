@@ -1,1 +1,197 @@
-
+/*  Name: Rotana Nou
+    Contact: Rotana_Nou@student.uml.edu
+    Course: GUI Programming I
+    File: assignment4.css
+    Copyright @ 2016 by Rotana Nou. May be freely
+    copied or excerpted for educational purposes with credit to the author.
+    Assigment4 Retoken
+    Date: 12/09/16
+    Descrotion: Styling my second assignmen which is to style my own website using css
+    Reference: w3schools.com, http://www.w3schools.com/tags/tag_nav.asp
+*/
+/*customize body*/
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: auto;
+    color: black;
+}
+/*customize navigation*/
+nav {
+    font-size: 16px;
+}
+/*customize unorder list of nav*/
+}
+ul {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+    position: relative;
+}
+/*This is the list*/
+/*I want list to display as inline and set the padding propeties*/
+li {
+    display: inline;
+    padding: 40px;
+}
+/*set the link text to none, make it all uppercase and color red*/
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+}
+/*when I put the mouse on that link will display white color*/
+a:hover {
+    color: #DEB887;
+}
+/*after links are visted it becomes red*/
+a:visited {
+    color: blue;
+}
+/*For the image, I want it to have a border radius to look rounded edges, set shadows and set to the right*/
+img {
+    border-radius: 30px;
+    padding-top: 10px;
+    box-shadow: 3px 3px 3px #c0c0c0;
+    float: left;
+    margin-left: 100px;
+}
+/*customize header*/
+header {
+    background-image: url("../images/stadium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+/*customize id headContent*/
+#headContent {
+    text-align: center;
+    color: white;
+}
+/*customize a school id para*/
+#school {
+    color: white;
+}
+/*customize class Content*/
+.Content {
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+}
+/*customize class sub cont*/
+.sub_cont {
+    text-align: center;
+    color: white;
+}
+/*customize all para*/
+p {
+    text-align: center;
+    font-size: 16px;
+}
+/*customize h2*/
+h2 {
+    font-size: 50px;
+}
+/*customize h4*/
+h4 {
+    font-size: 16px;
+}
+/*customize education section*/
+#education {
+    background-image: url("../images/school.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    margin-top:0px;
+}
+/*customize work section*/
+#work {
+    background-image: url("../images/work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+/*customize assignments section*/
+#assignments {
+    background-color: #FFA07A;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+/*customize contact*/
+#contact {
+    background-image: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+/*customize id assignment*/
+.assignment {
+    color: white;
+    height: 100vh;
+    background-image: url("../images/assignment.jpg");
+}
+/*customize table*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    width: 90vw;
+}
+/*customize table header and data*/
+.assignment th, td {
+    transition: all 0.15s;
+    border: 1px solid transparent;
+}
+/*customize table header*/
+.assignment th {
+    height: 40px;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+/*customize data*/
+.assignment td {
+    text-align: center;
+    height: 30px;
+}
+/*customize link visted */
+table a:visited {
+    color: green;
+}
+/*customize link hover*/
+table .link:hover {
+    background-color: red;
+}
+/*customize p of id work*/
+#work p{
+    color: #FFFACD;
+    font-size: 16px;
+}
+/*customize h2 of id work*/
+#work h2{
+    color: #FFFACD;
+}
+/*customize h4 of id work*/
+#work h4{
+    color: #FFFACD;
+}
+/*customize h2 of id assignments*/
+#assignments h2 {
+    font-size: 50px;
+}
+/*customize h2 of contact*/
+#contact h2 {
+    padding-top: 60px;
+    color: #F4A460;
+}
+/*customize para of id contact*/
+#contact p{
+    font-size: 30px;
+    color: #F4A460;
+}
+/*customize footer*/
+.footer {
+    font-size: 16px;
+}
