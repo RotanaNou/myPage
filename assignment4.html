@@ -1,0 +1,136 @@
+<!--Name: Rotana Nou
+    Contact: Rotana_Nou@student.uml.edu
+    Course: GUI Programming I
+    Copyright @ 2016 by Rotana Nou. May be freely
+    copied or excerpted for educational purposes with credit to the author.
+    Assigment4 Retoken
+    Date: 12/09/16
+    Descrotion: Styling my second assignmen which is to style my own website using css
+    Reference: w3schools.com, http://www.w3schools.com/tags/tag_nav.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--head of the page-->
+    <head>
+        <!--charater encoding for html document-->
+        <meta charset="utf-8">
+        <!-- title of the page -->
+        <title>Rotana's Website</title>
+        <!--link to css file-->
+        <link rel="stylesheet" href="css04/assignment4.css">
+    </head>
+    <!--body of the page-->
+    <body>
+        <!--creating the navigation-->
+        <!--http://www.w3schools.com/tags/tag_nav.asp -->
+        <nav>
+            <!--creating an unorder list-->
+            <ul>
+                <!--list items-->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- main home page header-->
+        <header id="home">
+            <!--this dive provide the image and first info-->
+            <div class="Content">
+                <img src="images/mypic.jpg" alt="mypic" class="mypic">
+                <h1 id="headContent">Rotana Nou</h1>
+                <p id="school">University Of Massachusetts Lowell Student. Love to Play Soccer.</p>
+            </div>
+        </header>
+        <!--education section that provides the education information-->
+        <section id="education">
+            <!--header content of section-->
+            <div class="Content">
+                <h2>Education</h2>
+            </div>
+            <!--sub content of the section-->
+            <div class="sub_cont">
+                <h4>School</h4>
+                <p>Univeristiy of Massachusetts Lowell.</p>
+            </div>
+            <!--sub content of the section-->
+            <div class="sub_cont">
+                <h4>Major</h4>
+                <p>Computer Science</p>
+            </div>
+            <!--sub content of the section-->
+            <div class="sub_cont">
+                <h4>Courses</h4>
+                <p>GUI Programming, Computer Architecture, Computing Courses</p>
+            </div>
+            <!--sub content of the section-->
+            <div class="sub_cont">
+                <h4>Graduation</h4>
+                <p>Expected Graduation in 2018</p>
+            </div>
+        </section>
+        <!--work section-->
+        <section id="work">
+            <!--header content of section-->
+            <div class="Content">
+                <h2>Work</h2>
+            </div>
+            <!--sub content of the section-->
+            <div class="sub_cont">
+                <h4>Engineering For Kids</h4>
+                <p>Lead Teacher @ Engineering For Kids (after school program)</p>
+            </div>
+        </section>
+        <!--assignments section-->
+        <section class="assignment" id="assignments">
+            <!--header content of section-->
+            <div class="Content">
+                <h2>Assignments</h2>
+            </div>
+            <!-- sub content of section that create the table-->
+            <div class="tableClass">
+                <!-- create a table-->
+                <table>
+                    <!-- first table row-->
+                    <tr>
+                        <!--table header-->
+                        <th>Order</th>
+                        <th>Assigment Name</th>
+                        <th>Link</th>
+                    </tr>
+                    <!--second table row which has table datat below-->
+                    <tr>
+                        <!--table data-->
+                        <td>1</td>
+                        <td>Creating Your Own Website</td>
+                        <td><a href="https://rotananou.github.io/myPage/assignment2.html">assignment2</a></td>
+                    </tr>
+                    <!--Third table row-->
+                    <tr>
+                        <!--table data-->
+                        <td>2</td>
+                        <td>Styling Your Own Website</td>
+                        <td><a href="https://rotananou.github.io/myPage/assignment4.html">assignment4</a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <!--contact section-->
+        <section id="contact">
+            <!--header content of contact section-->
+            <div class="Content">
+                <h2>Contact</h2>
+            </div>
+            <!--sub content of section-->
+            <div class="sub_contant">
+                <p>Email: Rotana_Nou@student.uml.edu</p>
+            </div>
+        </section>
+        <!-- This part is a footer part of the page-->
+        <div class="footer">
+            <p>Rotana Nou &copy; 2016. All rights Reserved.</p>
+            <p>Powered by <a href="http://www.w3schools.com">w3schools.com</a></p>
+        </div>
+    </body>
+</html>
